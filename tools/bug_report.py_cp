@@ -130,14 +130,16 @@ def main(launchpad_config, report_config):
                         assignee = bug.assignee.display_name
                     else:
                         assignee = 'no one'
-                    s = 'Bug #%(number)s %(status)s (%(target)s:%(sev)s) %(title)s %(link)s'
+                    s = 'Bug #%(number)s %(status)s (%(target)s:%(sev)s) %(title)s opened by %(owner)s %(link)s fixed by %(assignee)s'
                     s = s % {
                         'number': str(bug.bug.id).encode('utf-8'),
                         'target': bug.bug_target_name.encode('utf-8'),
                         'sev': bug.importance.encode('utf-8'),
+                        'owner': bug.owner.display_name.encode('utf-8'),
                         'link': bug.web_link.encode('utf-8'),
                         'status': bug.status.encode('utf-8'),
-                        'title': bug.title.encode('utf-8')
+                        'title': bug.title.encode('utf-8'),
+                        'assignee': assignee.encode('utf-8')
                     }
                     print s
                     s = s + '\n'
@@ -156,14 +158,16 @@ def main(launchpad_config, report_config):
                         assignee = bug.assignee.display_name
                     else:
                         assignee = 'no one'
-                    s = 'Bug #%(number)s %(status)s (%(target)s:%(sev)s) %(title)s %(link)s'
+                    s = 'Bug #%(number)s %(status)s (%(target)s:%(sev)s) %(title)s opened by %(owner)s %(link)s fixed by %(assignee)s'
                     s = s % {
                         'number': str(bug.bug.id).encode('utf-8'),
                         'target': bug.bug_target_name.encode('utf-8'),
                         'sev': bug.importance.encode('utf-8'),
+                        'owner': bug.owner.display_name.encode('utf-8'),
                         'link': bug.web_link.encode('utf-8'),
                         'status': bug.status.encode('utf-8'),
-                        'title': bug.title.encode('utf-8')
+                        'title': bug.title.encode('utf-8'),
+                        'assignee': assignee.encode('utf-8')
                     }
                     print s
                     s = s + '\n'
@@ -182,14 +186,16 @@ def main(launchpad_config, report_config):
                         assignee = bug.assignee.display_name
                     else:
                         assignee = 'no one'
-                    s = 'Bug #%(number)s %(status)s (%(target)s:%(sev)s) %(title)s %(link)s'
+                    s = 'Bug #%(number)s %(status)s (%(target)s:%(sev)s) %(title)s opened by %(owner)s %(link)s fixed by %(assignee)s'
                     s = s % {
                         'number': str(bug.bug.id).encode('utf-8'),
                         'target': bug.bug_target_name.encode('utf-8'),
                         'sev': bug.importance.encode('utf-8'),
+                        'owner': bug.owner.display_name.encode('utf-8'),
                         'link': bug.web_link.encode('utf-8'),
                         'status': bug.status.encode('utf-8'),
-                        'title': bug.title.encode('utf-8')
+                        'title': bug.title.encode('utf-8'),
+                        'assignee': assignee.encode('utf-8')
                     }
                     print s
                     s = s + '\n'
@@ -221,14 +227,16 @@ def main(launchpad_config, report_config):
                             assignee = bug.assignee.display_name
                         else:
                             assignee = 'no one'
-                        s = 'Bug #%(number)s %(status)s (%(target)s:%(sev)s) %(title)s %(link)s'
+                        s = 'Bug #%(number)s %(status)s (%(target)s:%(sev)s) %(title)s opened by %(owner)s %(link)s fixed by %(assignee)s'
                         s = s % {
                             'number': str(bug.bug.id).encode('utf-8'),
                             'target': bug.bug_target_name.encode('utf-8'),
                             'sev': bug.importance.encode('utf-8'),
+                            'owner': bug.owner.display_name.encode('utf-8'),
                             'link': bug.web_link.encode('utf-8'),
                             'status': bug.status.encode('utf-8'),
-                            'title': bug.title.encode('utf-8')
+                            'title': bug.title.encode('utf-8'),
+                            'assignee': assignee.encode('utf-8')
                         }
                         print s
                         s = s + '\n'
@@ -258,14 +266,16 @@ def main(launchpad_config, report_config):
                             assignee = bug.assignee.display_name
                         else:
                             assignee = 'no one'
-                        s = 'Bug #%(number)s %(status)s (%(target)s:%(sev)s) %(title)s %(link)s'
+                        s = 'Bug #%(number)s %(status)s (%(target)s:%(sev)s) %(title)s opened by %(owner)s %(link)s fixed by %(assignee)s'
                         s = s % {
                             'number': str(bug.bug.id).encode('utf-8'),
                             'target': bug.bug_target_name.encode('utf-8'),
                             'sev': bug.importance.encode('utf-8'),
+                            'owner': bug.owner.display_name.encode('utf-8'),
                             'link': bug.web_link.encode('utf-8'),
                             'status': bug.status.encode('utf-8'),
-                            'title': bug.title.encode('utf-8')
+                            'title': bug.title.encode('utf-8'),
+                            'assignee': assignee.encode('utf-8')
                         }
                         print s
                         s = s + '\n'
